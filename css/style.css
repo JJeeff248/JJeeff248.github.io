@@ -1,0 +1,29 @@
+/* ---------- Imports ---------- */
+
+
+/* ---------- Basic Styles ---------- */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* ---------- Variables ---------- */
+
+
+/* ---------- Main ---------- */
+.welcome {
+    width: 45vw;
+    margin: 0 auto;
+    position: relative;
+    top: 45vh;
+    transform: translateY(-50%);
+}
+
+.welcome h1 {
+    text-align: center;
+}
+
+.welcome p {
+    text-align: left;
+}
