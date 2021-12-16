@@ -8,6 +8,12 @@
     --link-color: #333;
     --link-hover-color: #F3F3F3;
 }
+
+[data-theme="dark"] {
+    --bg-color: #292929;
+    --text-color: #f8f8f8;
+}
+
 /* ---------- Basic Styles ---------- */
 body {
     font-family: 'Courier New', Courier, monospace;
@@ -17,7 +23,19 @@ body {
     margin: 0;
 }
 
-/* ---------- Variables ---------- */
+#themeSwitcher {
+    position: fixed;
+    top: -2px;
+    right: 0;
+    padding: 0.5rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0.15rem 0.5rem var(--text-color);
+    z-index: 999;
+}
 
 /* ---------- Welcome ---------- */
 .welcome {
