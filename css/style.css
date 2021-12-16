@@ -1,18 +1,27 @@
 /* ---------- Imports ---------- */
 
 
+/* ---------- Variables ---------- */
+:root {
+    --bg-color: #f8f8f8;
+    --text-color: #333;
+    --link-color: #333;
+    --link-hover-color: #F3F3F3;
+}
 /* ---------- Basic Styles ---------- */
 body {
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     margin: 0;
 }
 
 /* ---------- Variables ---------- */
 
-
-/* ---------- Main ---------- */
+/* ---------- Welcome ---------- */
 .welcome {
+    display: block;
     width: 45vw;
     margin: 0 auto;
     position: relative;
@@ -20,10 +29,44 @@ body {
     transform: translateY(-50%);
 }
 
-.welcome h1 {
+.landing h1 {
     text-align: center;
 }
 
-.welcome p {
+.landing p {
     text-align: left;
+}
+
+.scroll {
+    position: relative;
+    top: 36vh;
+    text-align: center;
+}
+
+.scroll #arrow {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border: 3px solid var(--text-color);
+    rotate: 45deg;
+    border-top: 0;
+    border-left: 0;
+    border-radius: 3px;
+
+    opacity: 0.5;
+
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(-20px, -20px);
+    }
+    100% {
+        transform: translate(-30px, -30px);
+    }
 }
